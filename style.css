@@ -1,0 +1,105 @@
+body{
+    height: 98vh;
+    width: 98vw;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 30px;
+    
+}
+header, footer{
+    border-radius: 20px;
+    color: white;
+    filter: blur(0.1px);
+     box-shadow: 0px 0px 10px 1px rgba(255, 255, 255);
+     height: 100px;
+}
+footer { 
+    
+    color: white;
+    text-align: center;
+    padding: 1rem; }
+img{
+    height: 150px;
+    border-radius: 50%;
+}
+.members1, .members2, .members3{
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding-top: 30px;
+    width: 350px;
+    height: 400px;
+
+    background-color: rgb(9, 9, 9) ;
+    opacity: 1;
+    position: relative;
+    border-radius: 20px;
+    color: white;
+    
+}
+.members1::after, .members1::before{
+    --angle:20deg;
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background:conic-gradient(from var(--angle), transparent 70%, #d11149, transparent);
+    z-index: -1;
+    animation: 3s spin linear infinite;
+    border-radius: 20px;
+}
+.members2::after, .members2::before{
+    --angle:20deg;
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background:conic-gradient(from var(--angle), transparent 70%, #11d111, transparent);
+    z-index: -1;
+    animation: 3s spin linear infinite;
+    border-radius: 20px;
+}
+.members3::after, .members3::before{
+    --angle:20deg;
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background:conic-gradient(from var(--angle), transparent 70%, #1627dd, transparent);
+    z-index: -1;
+    animation: 3s spin linear infinite;
+    border-radius: 20px;
+}
+.members1::before, .members2::before,.members3::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+    
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }to{
+        --angle: 360deg;
+    }
+}
+p{
+    font-size: 20px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
