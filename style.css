@@ -111,14 +111,20 @@ p,h2{
     }
 }
 @media (max-width: 600px) {
-    article{
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+   
+   
+    
+   main {
+        margin: 50px 12px 80px;
+        gap: 70px;
     }
+
+    article {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
     #img1,#img2,#img3{
         height: 300px;
         width: 300px;
@@ -130,8 +136,9 @@ p,h2{
     left: 0%;
     height: 100%;
     width: 100%;
+    
     background-image: linear-gradient(to bottom, transparent 100%, #121212);     
+    
+    
     }
 }
-   
-
