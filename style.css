@@ -110,3 +110,22 @@ p,h2{
         transform: translate(0px);
     }
 }
+@media (max-width: 600px) {
+   
+    
+    #img1,#img2,#img3{
+        height: 300px;
+        width: 300px;
+    }
+    .studentNo{
+    font-size: 2rem;
+    font-family: fantasy;
+    text-indent: 0px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+        
+}
+
+
