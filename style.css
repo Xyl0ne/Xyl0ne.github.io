@@ -5,12 +5,15 @@
 }
 body{
     background-color: #121212;
+    width: 100vw;
+    height: 100vh;
 }
 header, footer{
+
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: navy;
 }
@@ -33,14 +36,7 @@ section{
     
 }
 
-.studentNo{
-    font-size: 3rem;
-    font-family: fantasy;
-    text-indent: 0px;
-}
-h2{
-    font-family: 'Courier New', Courier, monospace;
-}
+
 p,h2{
     
     animation-name: appear;
@@ -51,7 +47,14 @@ p,h2{
     animation-range: entry 0 cover 50%;
     animation-iteration-count: 1;
 }
-
+.studentNo{
+    font-size: 3rem;
+    font-family: fantasy;
+    text-indent: 0px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
 @keyframes appear {
     from{
         color: transparent;
@@ -74,8 +77,8 @@ p,h2{
     background-image: url('lev.jpg') ;
 }
 #img1,#img2,#img3{
-    height: 500px;
-    width: 500px;
+    height:400px;
+    width: 400px;
     
     background-size: cover;
     position: relative;
@@ -115,7 +118,7 @@ p,h2{
 
     main {
         margin: 50px 12px 80px;
-        gap: 70px;
+        
     }
     header, footer {
         width: 100%;
@@ -129,8 +132,7 @@ p,h2{
 
     p{
     
-        display: flex;
-        flex-wrap: wrap;
+       
         word-wrap: wrap;
     }
     #img1, #img2, #img3 {
@@ -155,9 +157,9 @@ p,h2{
 
     .studentNo {
         font-size: 2.6rem;
+        
     }
     
 }
    
-
 
