@@ -5,8 +5,7 @@
 }
 body{
     background-color: #121212;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 header, footer{
 
@@ -31,8 +30,9 @@ article{
     
 }
 section{
-    width: 500px;
-    padding-left: 10px;
+    max-width: 500px;
+    width: 100%;                   
+    padding: 0 10px;
     
 }
 
@@ -114,7 +114,7 @@ h2{
         transform: translate(0px);
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
 
     main {
         margin: 50px 12px 80px;
@@ -130,11 +130,7 @@ h2{
         gap: 40px;
     }
 
-    p{
     
-       
-        word-wrap: wrap;
-    }
     #img1, #img2, #img3 {
         height: 300px;
         width: 300px;
@@ -154,10 +150,14 @@ h2{
         padding-right: 5px;
         text-align: center;
     }
-
+    
     .studentNo {
         font-size: 2.6rem;
         
+    }
+    h1{
+        font-size: 1.8rem;
+        text-align: center;
     }
     
 }
