@@ -111,21 +111,27 @@ p,h2{
     }
 }
 @media (max-width: 600px) {
-   
-    
+    article{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     #img1,#img2,#img3{
         height: 300px;
         width: 300px;
     }
-    .studentNo{
-    font-size: 2rem;
-    font-family: fantasy;
-    text-indent: 0px;
+    #img1::after, #img2::after, #img3::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent 100%, #121212);     
     }
-    h2{
-        font-size: 1.5rem;
-    }
-        
 }
-
+   
 
