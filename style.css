@@ -76,7 +76,10 @@ h2{
 #img3{
     background-image: url('lev.jpg') ;
 }
-#img1,#img2,#img3{
+#img4{
+    background-image: url('lean.jpg') ;
+}
+#img1,#img2,#img3,#img4{
     height:400px;
     width: 400px;
     
@@ -96,7 +99,7 @@ h2{
     
 
 }
-#img1::after, #img2::after, #img3::after{
+#img1::after, #img2::after, #img3::after, #img4::after{
     content: '';
     position: absolute;
     top: 0%;
@@ -131,14 +134,14 @@ h2{
     }
 
     
-    #img1, #img2, #img3 {
+    #img1, #img2, #img3, #img4 {
         height: 300px;
         width: 300px;
         max-width: 90vw;
     }
 
    
-    #img1::after, #img2::after, #img3::after {
+    #img1::after, #img2::after, #img3::after, #img4::after {
         background-image: linear-gradient(
             transparent 100%,
             #121212 
